@@ -1,32 +1,29 @@
 # Newt releases
 
-Release builds of Newt, an e-paper reading firmware for the Xteink X3, built on
-[FreeInk](https://github.com/Free-Ink/freeink-sdk).
+**New releases, the install page and new issues are now at
+[VargasDevelopment/newt](https://github.com/VargasDevelopment/newt).** Newt's
+source is public there, under the MIT license.
 
-Newt is in alpha. Its source is not public yet, so this repository holds release
-builds only.
+- Latest release: <https://github.com/VargasDevelopment/newt/releases/latest>
+- Install page: <https://vargasdevelopment.github.io/newt/>
+- Report a problem: <https://github.com/VargasDevelopment/newt/issues>
 
-## Versions
+This repository keeps the releases up to v0.2.0, the last one published here.
+A Newt that still reads updates from here finds v0.2.0, installs it, and from
+then on reads VargasDevelopment/newt. Nothing new is published here.
 
-Versions follow [Semantic Versioning 2.0.0](https://semver.org/). Each release is
-tagged `v<version>`, for example `v0.1.0-alpha.2`. While the version starts with
-`0.`, any release may change behavior.
+## Source for these releases
+
+Each release here offers its complete source on request. That offer stands for
+at least three years: open an issue in this repository, naming the release
+version and build ID. Issues stay open for that.
 
 ## What a release contains
 
 - `newt.bin`: the firmware image.
 - `newt.manifest`: its version, build ID, size and SHA-256.
+- `NOTICES.txt`: the third-party software and fonts it includes, with their
+  licenses.
 
-Newt checks the image against its manifest before it installs anything, and keeps
-the running version if a check fails.
-
-## Install from the SD card
-
-1. Download `newt.bin` and `newt.manifest` from a release.
-2. Copy both files to `/Newt/Update/` on the card.
-3. Connect USB power, then open Settings → Update on the X3.
-
-## Licenses
-
-Newt includes third-party software and fonts under their own licenses. Each
-release lists them.
+Newt checks the image against its manifest before it installs anything, and
+keeps the running version if a check fails.
